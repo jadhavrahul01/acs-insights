@@ -1,0 +1,437 @@
+.snapshots {
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.snapshots h1 {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+.snapshots-content-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-top: 20px;
+  position: relative;
+}
+.snapshots-content-box::-webkit-scrollbar {
+  display: none;
+}
+.snapshots-content {
+  min-width: 17%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 0s linear infinite;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translate(-100%);
+  }
+}
+.snapshots-content {
+  width: 100%;
+  cursor: pointer;
+}
+.snapshots-content img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 3px solid deeppink;
+}
+.snapshots-content p {
+  margin-top: 10px;
+  color: white;
+}
+
+.snapshots-status-content-box {
+  width: 25%;
+  height: 85%;
+  background: white;
+  display: flex;
+  position: relative;
+}
+.snapshots-status-content-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.fa-xmark {
+  position: absolute;
+  color: white;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  font-size: 1.8rem;
+}
+
+.snapshots-conten-pre {
+  position: absolute;
+  left: -5%;
+  font-size: 1.5rem;
+  background: white;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: black;
+  transform: translateY(20px);
+}
+.snapshots-conten-next {
+  position: absolute;
+  right: -5%;
+  font-size: 1.5rem;
+  background: white;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: black;
+  transform: translateY(20px);
+}
+
+.snapshots-status {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.562);
+  transform: translatey(-30%);
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  display: none;
+}
+.show {
+  display: grid;
+}
+.close {
+  display: none;
+}
+
+.snapshots-status-content-box {
+  cursor: pointer;
+}
+
+.snapshots-status {
+  cursor: pointer;
+}
+.acslogo {
+  width: 140px !important;
+}
+
+/* nikhil css end */
+
+.row1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 2px 0 75px;
+  /* height: 500px; */
+}
+
+.entry-point-container {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.entry-point-card-title {
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+}
+
+.lightbox {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: -99999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.lightbox.show {
+  visibility: visible;
+  z-index: 99999;
+  opacity: 1;
+}
+.status-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+amp-story-player.my-player {
+  width: 100%;
+  height: 100%;
+  /*   margin: 70px auto; */
+}
+
+.entry-points {
+  width: 100%;
+  display: flex;
+  left: -20px;
+  padding: 0px 60px;
+  padding-bottom: 10px;
+}
+
+.circular-entry-point img {
+  cursor: pointer;
+  width: 500px;
+  height: 140px;
+  border-radius: 50%;
+  background-clip: content-box;
+  border: 2px solid;
+  padding: 10px;
+}
+
+.entry-point-card-container {
+  position: relative;
+  padding-right: 75px;
+  transition: transform 0.3s;
+}
+
+/* Extra stuff that makes sample aesthetic. */
+
+body h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  font-family: Poppins;
+  margin-bottom: 35px;
+  margin-left: 20px;
+}
+
+.fake-content {
+  width: 320px;
+  height: 427px;
+  top: -178px;
+  margin: auto;
+
+  background: transparent;
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); */
+  border-radius: 16px;
+}
+
+.viewport {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  /*   border-radius: 10px; */
+  padding: 20px;
+
+  margin: auto;
+  /* width: 360px; */
+  height: 600px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.worksec-mar {
+  margin-top: -95px !important;
+}
+
+.footer .footer-links .footer-block .footer-logo {
+  width: 157px !important;
+}
+
+.firstline {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.secondline {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.who-row {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.who-row span {
+  color: #00ef5d;
+  font-size: 2.5rem;
+}
+.who-row p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.nav-content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  overflow: inherit;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+
+.wapper-client1 {
+  flex-wrap: nowrap !important;
+}
+
+.logo-box1 {
+  /* position: relative; */
+  background-color: transparent !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  align-items: center;
+  width: calc(33.33333% - 2px);
+  /* padding: 15px; */
+  min-height: 136px !important;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin: 26px;
+  /* gap: 158px; */
+}
+.entry-points {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+.entry-points::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+.status-card img {
+  height: 200px;
+  width: 200px;
+}
+
+/* media query start */
+
+@media only screen and (min-width: 1700px) and (max-width: 4000px) {
+  .circular-entry-point img {
+    cursor: pointer;
+    width: 263px;
+    height: 175px;
+    border-radius: 50%;
+    background-clip: content-box;
+    border: 2px solid;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1600px) {
+  .circular-entry-point img {
+    cursor: pointer;
+    width: 500px;
+    height: 116px;
+    border-radius: 50%;
+    background-clip: content-box;
+    border: 2px solid;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 950px) {
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .who-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hiring {
+    text-align: center;
+    /* font-size: 46px; */
+  }
+  .entry-point-card-container {
+    position: relative;
+    padding-right: 205px;
+    transition: transform 0.3s;
+  }
+
+  .brand-client .wapper-client {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .wapper-client1 {
+    flex-direction: column;
+  }
+
+  .logo-box1 {
+    /* position: relative; */
+    background-color: transparent !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33333% - 2px);
+    /* padding: 15px; */
+    min-height: 136px !important;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin: 26px;
+    /* gap: 158px; */
+  }
+  .brand-client .wapper-client {
+    align-items: left;
+    margin-left: 25px;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+  .status-card img {
+    height: 137px;
+    max-width: 143px!important;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 2px 0 30px;
+}
+}
