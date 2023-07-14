@@ -34,6 +34,18 @@
   animation: scroll 0s linear infinite;
 }
 
+
+.spacing{
+  margin: 0 341px;
+}
+
+.firstcol{
+  width: 40%;
+}
+.secondcol{
+  width: 60%;
+}
+
 @keyframes scroll {
   100% {
     transform: translate(-100%);
@@ -361,9 +373,24 @@ body h1 {
     border: 2px solid;
     padding: 10px;
   }
+  .spacing{
+    margin: 0 168px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 950px) {
+  .spacing{
+
+    margin: 0 104px;
+    flex-direction: column;
+  }
+  .firstcol{
+    width: 100%;
+  }
+  .secondcol{
+    width: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 200px) and (max-width: 500px) {
@@ -372,7 +399,7 @@ body h1 {
     gap: 50px;
   }
   .hiring {
-    text-align: center;
+    /* text-align: center; */
     /* font-size: 46px; */
   }
   .entry-point-card-container {
@@ -433,5 +460,16 @@ body h1 {
     display: flex;
     justify-content: center;
     padding: 0 2px 0 30px;
+}
+
+.spacing{
+  margin: 0 16px;
+  flex-direction: column;
+}
+.firstcol{
+  width: 100%;
+}
+.secondcol{
+  width: 100%;
 }
 }

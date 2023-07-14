@@ -2829,7 +2829,7 @@ input[type="submit"]:hover::before {
   width: 30px;
   line-height: 33px;
   text-align: center;
-  margin: 12px 20px;
+  margin: 12px 20px 12px 0px;
   background-color: #fff;
   color: #000;
   -webkit-transition: background 0.2s linear, color 0.2s linear;
