@@ -613,7 +613,11 @@ body h1 {
 
 
 
-
+.ser-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
 
 
 
@@ -760,5 +764,11 @@ body h1 {
 }
 .service-container .card:hover {
   flex-grow: 10;
+}
+.popup .content{
+  width: 370px;
+}
+.ser-box{
+  flex-direction: column;
 }
 }
