@@ -83,16 +83,16 @@
             </div>
             <nav class=" accent-menu main-navigation">
                 <ul class="extend-container">
-                    <li class="custom-drop-down">
-                        <a href="#">Home</a>
+                    <li class="">
+                        <a href="index.html">Home</a>
                        
                     </li>
-                    <li class="custom-drop-down">
+                    <li class="">
                         <a href="#">Services </a>
                       
                     </li>
-                    <li><a href="about.html">Work </a></li>
-                    <li class="custom-drop-down">
+                    <li><a href="#">Work </a></li>
+                    <li class="">
                         <a href="#">Blogs</a>
                         <!-- <ul>
                             <li><a href="work.html">Work</a></li>
@@ -101,11 +101,11 @@
                             <li><a href="project-5.html">Header Three</a></li>
                         </ul> -->
                     </li>
-                    <li class="custom-drop-down">
-                        <a href="#">About Us</a>
+                    <li class="">
+                        <a href="about.html">About Us</a>
                         
                     </li>
-                    <li class="custom-drop-down">
+                    <li class="">
                         <a href="#">Contact us </a>
                         
                     </li>
@@ -1336,7 +1336,7 @@
 
 
 
-                <section class="mb-100">
+                <!-- <section class="mb-100">
                     <div class="c-wapp">
                         <div class="firstline">
                           
@@ -1374,48 +1374,95 @@
                             </div>
 
                         </div>
-                   
-
-
-
-
-                        <!-- <div class="secondline">
-
-                            <div class="link-custom">
-                                <a href="contact.html" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider">
-                                    <span>Get a Free Business Plan</span>
-                                </a>
-                            </div>
-                            
-                        </div> -->
                        
                     </div>
 
-                    <!-- <div class="firstline">
-                        <span class="career">
-                            Let’s Chat 
-                        </span>
-                    </div>
-                    <div class="secondline">
-                        <span class="hiring">
-                            What can we do for you ? 
-                        </span>
-                    </div>
-                    <div class="ctabtn"></div> -->
-                    <!-- <div class="container">
+                  
+                </section> -->
+
+
+
+
+
+
+ 
+
+
+                <section class="contact-up section-padding">
+                    <div class="container">
                         <div class="c-wapp">
-                            <a href="contact.html" class="effect-ajax">
+                            <a href="contact.html" class="effect-ajax justify-content-start mb-30">
                                 <span class="career">
                                     Let’s Chat 
                                 </span>
+                               
+                             
+                            </a>
+                            <a href="javascript:void(0)" class="effect-ajax">
+                              
                                 <span class="hiring">
                                     What can we do for you ? 
                                 </span>
-                              
+                             
                             </a>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="pop-up-btn">
+                    <button onclick="togglePopup()" class="mt-100 first-button image-zoom effect-ajax" data-dsn-ajax="slider"><span>Get a Free Business Plan</span></button></div>
+                    <div class="secondline">
+                                   
+                  
+                    </div>
                 </section>
+                
+             <section class="pu-form">
+
+
+                    <div class="popup" id="popup-1">
+                      <div class="content">
+                       <div class="close-btn" onclick="togglePopup()">
+                        ×</div>
+                        
+                   
+                   <div style="background-color: white;
+                   padding: 40px;
+                   border-radius: 40px;" class="secondcol1">
+                      <div class="">
+                   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                   <script>
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "40237595",
+                             formId: "9bed32e1-f64f-4d55-8f35-c2810566ef5a"
+                                       });
+                           </script>
+                   
+                     </div>
+                   </div>
+                         
+                        
+                      </div>
+                     </div>
+                    </section>
+                     <!-- <button onclick="togglePopup()" class="first-button image-zoom effect-ajax" data-dsn-ajax="slider"><span>Get a Free Business Plan</span></button> -->
+                   <script>
+                    function togglePopup() {
+                    document.getElementById("popup-1")
+                     .classList.toggle("active");
+                   }
+                   </script>
+                   
+            
+
+
+
+
+
+
+
+
+
+
 
 
             <footer class="footer">

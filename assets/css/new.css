@@ -351,6 +351,294 @@ body h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenet-hero h1{
+  margin-left: 1px!important;
+}
+
+
+
+
+
+
+
+
+
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  transform: skew(-5deg);
+}
+.service-container .card {
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+}
+.service-container .card .card__head {
+  color: black;
+  background: #00ef5d;
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  white-space: nowrap;
+}
+.service-container .card:hover {
+  flex-grow: 2;
+}
+.service-container .card:hover img {
+  filter: grayscale(0);
+}
+.service-container .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  transform: rotate(0deg) skew(-5deg);
+}
+.service-container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: grayscale(100%);
+}
+.service-container .card:not(:nth-child(5)) {
+  margin-right: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pu-form{
+  height: 100%;
+  width: 100%;
+}
+
+ .popup .content {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-150%) scale(0);
+  width: 800px;
+  height: 430px;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent;
+  z-index: 1;
+ }
+ 
+ .popup .close-btn {
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  vertical-align: middle;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  color: #000000;
+  font-size: 30px;
+  border-radius: 50%;
+  border:2px solid black;
+  padding:-6px 5px 1px 5px;
+  /* background: #00ef5d; */
+  cursor: pointer;
+  }
+ 
+ .popup.active .content {
+ transition: all 300ms ease-in-out;
+ transform: translate(-50%,-50%) scale(1);
+ }
+
+ 
+
+ 
+ .first-button {
+ color: rgb(3, 48, 146);
+ font-size: 25px;
+ font-weight: 500;
+ padding: 8px 16px!important;
+ border-radius:45px!important;
+ border: none;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #dadadb;
+  
+ transition: box-shadow .35s ease !important;
+ outline: none;
+ }
+ 
+ .first-button:active {  
+ background-color: rgb(2, 42, 112);
+ color: #fff;
+ border: none;
+ }
+ 
+ .second-button {
+ color: white;
+ font-size: 18px;
+ font-weight: 500;
+ margin-top: 20px;
+ padding: 15px 40px;
+ border-radius: 5px;
+ border: none;
+ background: #05438f;
+  
+ transition: box-shadow .35s ease !important;
+ outline: none;
+ }
+ 
+ .second-button:active{
+ background: linear-gradient(145deg,#222222, #292929);
+  
+ border: none;
+ outline: none;
+ }
+
+
+ /* .pop-up-btn button::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  line-height: 33px;
+  text-align: center;
+  margin: 12px 20px 12px 0px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: background 0.2s linear 0s, color 0.2s linear 0s;
+} */
+
+
+.pop-up-btn button span::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  line-height: 33px;
+  text-align: center;
+  margin: 12px 20px 12px 0px;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background 0.2s linear, color 0.2s linear;
+  -o-transition: background 0.2s linear, color 0.2s linear;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media query start */
 
 @media only screen and (min-width: 1700px) and (max-width: 4000px) {
@@ -399,10 +687,6 @@ body h1 {
   .who-row {
     flex-direction: column;
     gap: 50px;
-  }
-  .hiring {
-    /* text-align: center; */
-    /* font-size: 46px; */
   }
   .entry-point-card-container {
     position: relative;
@@ -473,5 +757,8 @@ body h1 {
 }
 .secondcol{
   width: 100%;
+}
+.service-container .card:hover {
+  flex-grow: 10;
 }
 }
