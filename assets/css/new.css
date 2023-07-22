@@ -145,7 +145,7 @@
   width: 140px !important;
 }
 
-/* nikhil css end */
+
 
 .row1 {
   width: 100%;
@@ -228,15 +228,7 @@ amp-story-player.my-player {
 
 /* Extra stuff that makes sample aesthetic. */
 
-body h1 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: white;
-  font-family: Poppins;
-  margin-bottom: 35px;
-  margin-left: 20px;
-}
+
 
 .fake-content {
   width: 320px;
@@ -351,11 +343,23 @@ body h1 {
 
 
 
+.hubspot-cover{
+  content: '';
+  position: relative;
+  background-color: #fff;
+  height: 100px;
+  width: 500px;
+  bottom: 110px;
+  left: 20px;
+}
 
+.margin-t{
+  margin-top: 200px;
+}
 
-
-
-
+.para-head-size{
+  font-size: 1.5rem;
+}
 
 
 
@@ -408,8 +412,7 @@ body h1 {
 
 
 
-
-
+/* about page services cards css start */
 
 .service-container {
   display: flex;
@@ -466,6 +469,7 @@ body h1 {
 }
 
 
+/* about page services cards css end */
 
 
 
@@ -475,7 +479,7 @@ body h1 {
 
 
 
-
+/* CTA button popup form css start */
 
 .pu-form{
   height: 100%;
@@ -566,27 +570,6 @@ body h1 {
  outline: none;
  }
 
-
- /* .pop-up-btn button::before {
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-  border-radius: 50%;
-  font-size: 10px;
-  font-weight: 600;
-  height: 30px;
-  width: 30px;
-  line-height: 33px;
-  text-align: center;
-  margin: 12px 20px 12px 0px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  transition: background 0.2s linear 0s, color 0.2s linear 0s;
-} */
-
-
 .pop-up-btn button span::before {
   content: "\f054";
   font-family: "Font Awesome 5 Free";
@@ -609,7 +592,7 @@ body h1 {
   transition: background 0.2s linear, color 0.2s linear;
 }
 
-
+/* CTA button popup form css end */
 
 
 
@@ -771,4 +754,14 @@ body h1 {
 .ser-box{
   flex-direction: column;
 }
+.hubspot-cover{
+  content: '';
+  position: relative;
+  background-color: #fff;
+  height: 75px;
+  width: 280px;
+  bottom: 129px;
+  left: 20px;
+}
+
 }
